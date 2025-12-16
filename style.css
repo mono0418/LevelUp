@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+}
+
+#container1 {
+    display: grid;
+    grid-template-columns: 30px 200px auto 100px;
+    grid-template-rows: 15% 25% 25% 15%;
+    grid-template-areas:
+        "hd hd hd hd"
+        "as mn mn as"
+        "as mn mn as"
+        "as mn mn as"
+        "ft ft ft ft";
+}
+
+header {
+    grid-area: hd;
+    width: 1vw;
+    background-color: blue;
+}
+
+nav {}
+
+main {
+    grid-area: mn;
+    background-color: blueviolet;
+
+}
+
+aside {
+    grid-area: as;
+    background-color: cadetblue;
+}
+
+footer {
+    grid-area: ft;
+    background-color: crimson;
+}
